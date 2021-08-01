@@ -12,9 +12,9 @@ header{
     margin-left: 220px;
     padding-left: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
-    background-color: rgb(255, 244, 235);
+    background-color: #FDF1EB;
 }
 
 header>section>h1{
@@ -31,10 +31,23 @@ header>section>p{
 
 .menusup{
     display: flex;
+    margin-top: 13px;
 }
 
 p>span{
     display: block;
+}
+
+.dropbox{
+    width: 97px;
+    height: 34px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    display: block;
+}
+
+.langicon{
+    
 }
 
 
@@ -45,18 +58,21 @@ p>span{
 /* barra lateral */
 
 .menulateral{
-    width: 13.75rem;
+    max-width: 13.75rem;
     height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: -47.44%;
     border-right: 1px;
-    box-shadow: 0 8px 10px rgba(1 1 1 / 15%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
 }
 
 .menutitle{
     color: white;
-    background-image: linear-gradient(rgb(253, 157, 21), rgb(249, 92, 0));
+    background-image: linear-gradient(rgb(253, 157, 21), #ED7839);
     padding: 1.1rem;
     text-align: center;
     font-weight: bold;
@@ -65,7 +81,8 @@ p>span{
 
 .logo{
     margin-top: 1rem;
-    width: 13.65rem;
+    max-width: 13.65rem;
+    width: 100%;
 }
 
 .menulist{
@@ -75,8 +92,32 @@ p>span{
 
 .menulist>li{
     padding: 8px 8px 8px 25px;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid #E7E7E7;
 }
+
+.contato{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.on{
+    background-color: #FDF1EB;
+    position: relative;
+}
+
+.on::before {
+    content: '';
+    border-left: solid 4px #ED7839;
+    height: 35px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+  }
+
+
 
 /* /barra lateral */
 
@@ -84,8 +125,97 @@ p>span{
 
 
 
-
-
 main{
     margin-left: 16rem;
+    margin-right: 3rem;
+}
+
+
+
+
+/* vídeo */
+
+.videosec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.vidcont{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    width: 783px;
+}
+
+.vidcont>h2{
+    color: #ED7839;
+    max-width: 700px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.vidcont>img{
+    max-width: 783px;
+    width: 100%;
+}
+
+@media (max-width: 973px)
+{
+  .vidcont>img
+   {
+    width: 500px;
+   }
+}
+
+/* /vídeo */
+
+
+
+/* botões e detalhes */
+
+.rightcolumn{
+    margin-top: 20px;
+}
+
+
+.buttons{
+    text-align: end;
+    margin-bottom: 16px;
+}
+
+.buttons>a>p{
+    text-transform: uppercase;
+    color: #ED7839;
+}
+
+
+
+.details{
+    border: 1px solid #E7E7E7;
+    overflow: auto;
+    width: 242px;
+    height: 439px;
+}
+
+.details::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+.details::-webkit-scrollbar {
+    width: 3px;
+    background: #F4F4F4;
+}
+
+.details::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.details>h2{
+    background-color: #FDF1EB;
+    padding: 10px;
 }

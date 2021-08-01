@@ -10,6 +10,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
 </head>
 
@@ -26,7 +27,7 @@
         
         <!-- dropbox, login -->
         <nav class="menusup">
-            <button>PT, BR</button>
+            <button class="dropbox"><img class="langicon" src="img/language image.png">PT, BR<img class="arrowndownicon" src="img/dropdown.jpg"></button>
             <p><span>Bem vindo!</span> <span>alguem12@galoascience.com</span></p>
         </nav>
         <!-- /dropbox, login -->
@@ -37,14 +38,14 @@
     <section>
         <nav class="menulateral">
             <h2 class="menutitle">SLACA 2019</h2>
-            <img class="logo" src="img/logo.png" alt="13 slaca">
+            <img class="logo" src="./img/dewey 4.png" alt="13 slaca">
             <ul class="menulist">
                 <li><a href="#">Apresentação</a></li>
                 <li><a href="#">Comitês</a></li>
                 <li><a href="#">Autores</a></li>
                 <li><a href="#">Eixos temáticos</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li class="on"><a href="#">Trabalhos</a></li>
+                <li><a class="contato" href="#">Contato</a></li>
             </ul>
         </nav>
     </section>
@@ -55,17 +56,36 @@
         <!-- vídeo, botões e detalhes -->
         <section class="videosec">
             <!-- video -->
-            <div>
-                <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do
-                    município de Campinas/SP</h2>
+            <div class="vidcont">
+                <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
+
+                <img src="img/vídeo apresentação.png" class="img-fluid" alt="video">
+                
             </div>
             <!-- /video -->
 
 
             <!-- detalhes -->
-            <div>
-                <h2>detalhes</h2>
-            </div>
+            <section class="rightcolumn">
+
+                <div class="buttons">
+                    <a href="#"><img src="img/download button.jpg" class="img-fluid" alt="download"></a>
+                    <a href="#"><img src="img/favorite button.jpg" class="img-fluid" alt="favorite"></a>
+                    <a href="#"><img src="img/doi button.jpg" class="img-fluid" alt="doi"></a>
+                    <a href="#"><p>Como citar esse trabalho?</p></a>
+                </div>
+
+
+
+
+
+
+                <div class="details">
+                    <h2>Detalhes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam, omnis sunt nisi delectus excepturi optio quidem, ipsam soluta animi non. Accusamus placeat quo eaque, facere modi ratione doloribus perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ullam error labore blanditiis adipisci repellendus porro alias iusto consectetur molestiae, a facere iure eos illo possimus facilis doloribus magnam quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum voluptate praesentium natus dolor sunt amet ad. Officiis maxime ad, dolorum cum odit inventore in non dolorem! Illo, fugit ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus repellat quaerat repellendus soluta totam nobis maxime consectetur corporis esse optio rem deserunt voluptatibus nesciunt excepturi, officiis perferendis quibusdam molestiae!</p>
+                </div>
+
+            </section>
             <!-- /detalhes -->
         </section>
         <!-- /vídeo, botões e detalhes -->
