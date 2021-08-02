@@ -10,44 +10,60 @@
 /* menu superior */
 header{
     margin-left: 220px;
-    padding-left: 30px;
+    padding: 5.5px 0px 5.5px 30px;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     background-color: #FDF1EB;
+    padding-right: 4rem;
+}
+
+header>section{
+    color: #725C5C;
+    font-weight: 400;
 }
 
 header>section>h1{
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.header>section>h2{
-    font-size: 30px;
+header>section>h3{
+    font-size: 14px;
 }
 
-header>section>p{
-    font-size: 15px;
+header>section>h2{
+    font-size: 22px;
+    line-height: 25.78px;
 }
 
 .menusup{
     display: flex;
     margin-top: 13px;
+    text-align: end;
+    gap: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+
 }
 
-p>span{
+.menusup>p{
+    font-size: 12px;
+}
+
+.menusup>p>span{
     display: block;
+    font-size: 14px;
 }
 
 .dropbox{
-    width: 97px;
-    height: 34px;
-    border: 1px solid #CCCCCC;
-    border-radius: 3px;
-    display: block;
+    max-width: 97px;
+    max-height: 34px;
+    cursor: pointer;
 }
 
-.langicon{
-    
+.imgperfil{
+    max-height: 30px;
+    border-radius: 50%;
 }
 
 
@@ -58,7 +74,7 @@ p>span{
 /* barra lateral */
 
 .menulateral{
-    max-width: 13.75rem;
+    max-width: 220px;
     height: 100%;
     position: absolute;
     left: 0%;
@@ -71,28 +87,41 @@ p>span{
 }
 
 .menutitle{
-    color: white;
-    background-image: linear-gradient(rgb(253, 157, 21), #ED7839);
-    padding: 1.1rem;
-    text-align: center;
+    background-image: linear-gradient(#FFB354
+    , #EE7A3A);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 30px;
+    text-align: center;
+    height: 68px;
+    padding-top: 14px;
+}
+
+.menutitle>a{
+    color: #FFFFFF;
 }
 
 .logo{
     margin-top: 1rem;
-    max-width: 13.65rem;
+    max-width: 220px;
     width: 100%;
 }
 
 .menulist{
     margin-top: 10px;
     width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
 .menulist>li{
     padding: 8px 8px 8px 25px;
     border-bottom: 2px solid #E7E7E7;
+}
+
+.menulist>li>a{
+    color: #725C5C;
 }
 
 .contato{
@@ -115,9 +144,7 @@ p>span{
     left: 0%;
     right: 0%;
     top: 0%;
-  }
-
-
+}
 
 /* /barra lateral */
 
@@ -152,7 +179,7 @@ main{
 .vidcont>h2{
     color: #ED7839;
     max-width: 700px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -162,13 +189,15 @@ main{
 .vidcont>img{
     max-width: 783px;
     width: 100%;
+    cursor: pointer;
 }
 
-@media (max-width: 973px)
+
+ @media (max-width: 600px)
 {
   .vidcont>img
    {
-    width: 500px;
+    width: 250px;
    }
 }
 
@@ -194,12 +223,11 @@ main{
 }
 
 
-
 .details{
-    border: 1px solid #E7E7E7;
+    border: 2px solid #E7E7E7;
     overflow: auto;
     width: 242px;
-    height: 439px;
+    height: 418px;
 }
 
 .details::-webkit-scrollbar-track {
@@ -219,3 +247,60 @@ main{
     background-color: #FDF1EB;
     padding: 10px;
 }
+
+
+
+
+/* resumo */
+
+details{
+    border: 2px solid #E7E7E7;
+    text-align: justify;
+    margin-left: 20px;
+    max-width: 1005px;
+}
+
+details>summary>span>h2{
+    background-color: #FDF1EB;
+    padding: 10px;
+    cursor: pointer;
+}
+
+details>summary>p{
+    padding: 10px;
+}
+
+details>p{
+    padding: 10px;
+}
+
+/* /resumo */
+
+
+
+/* discussões */
+
+.discussões{
+    margin-top: 30px;
+    border: 2px solid #E7E7E7;
+    text-align: justify;
+    margin-left: 20px;
+    max-width: 1005px;
+}
+
+#principal>h2{
+    background-color: #FDF1EB;
+    padding: 10px;
+}
+
+#principal>p{
+    padding: 10px;
+}
+
+#first, #second, #third{
+    display: none;
+}
+
+
+
+/* /discussões */
