@@ -16,6 +16,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
 
     <!-- javascript -->
     <script type="text/javascript" src="./js/javinha.js"></script>
@@ -35,7 +36,7 @@
         
         <!-- dropbox, login -->
         <nav class="menusup">
-            <img class="dropbox" src="img/idiomas.jpg" alt="idioma">
+            <img class="dropbox" src="./img/idiomas.jpg" alt="idioma">
             <p><span>Bem vindo!</span> alguem12@galoascience.com</p>
             <img class="imgperfil" src="img/image.jpg">
         </nav>
@@ -44,8 +45,8 @@
     <!-- ./menu -->
 
     <!-- barra lateral -->
-    <section>
-        <nav class="menulateral">
+    <section class="container-menulateral">
+        <nav>
             <h2 class="menutitle"><a href="./index.html">SLACA 2019</a></h2>
             <img class="logo" src="./img/dewey 4.png" alt="13 slaca">
             <ul class="menulist">
@@ -85,8 +86,12 @@
                 </div>
 
                 <div class="details">
-                    <h2>Detalhes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam, omnis sunt nisi delectus excepturi optio quidem, ipsam soluta animi non. Accusamus placeat quo eaque, facere modi ratione doloribus perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ullam error labore blanditiis adipisci repellendus porro alias iusto consectetur molestiae, a facere iure eos illo possimus facilis doloribus magnam quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum voluptate praesentium natus dolor sunt amet ad. Officiis maxime ad, dolorum cum odit inventore in non dolorem! Illo, fugit ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus repellat quaerat repellendus soluta totam nobis maxime consectetur corporis esse optio rem deserunt voluptatibus nesciunt excepturi, officiis perferendis quibusdam molestiae!</p>
+                    <div class="container">
+                        <h2>Detalhes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam, omnis sunt nisi delectus excepturi optio quidem, ipsam soluta animi non. Accusamus placeat quo eaque, facere modi ratione doloribus perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ullam error labore blanditiis adipisci repellendus porro alias iusto consectetur molestiae, a facere iure eos illo possimus facilis doloribus magnam quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum voluptate praesentium natus dolor sunt amet ad. Officiis maxime ad, dolorum cum odit inventore in non dolorem! Illo, fugit ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus repellat quaerat repellendus soluta totam nobis maxime consectetur corporis esse optio rem deserunt voluptatibus nesciunt excepturi, officiis perferendis quibusdam molestiae!</p>
+
+                    </div>
+                    
                 </div>
             </section>
             <!-- /detalhes -->
@@ -109,17 +114,68 @@
         <section class="discussões">
             <div id="principal">
                 <h2>Discussões</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur iste itaque omnis, provident placeat dolore suscipit. Laudantium perferendis impedit veritatis a tempora maxime? Odio voluptatem iure rerum adipisci voluptas!</p>
-                <button onclick="criarTopico()">criar tópico</button>
+                <div class="conteudo-principal">
+                    <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+                    <img src="./img/icone1.jpg" alt="">
+                    <img src="./img/icone2.jpg" alt="">
+                    <img src="./img/icone3.jpg" alt="">
+                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixei seus questionamentos ou sugestões para o autor!</p>
+                    <button class="createtopic" onclick="criarTopico()"><img src="./img/criartopico.jpg" alt="criar topico"></button>
+
+                    <script>
+                        function criarTopico(){
+                          var princpal = document.getElementById("principal");
+                          principal.style.cssText = 'display: none';
+                        
+                        
+                          var second = document.getElementById("second");
+                          second.style.cssText = 'display: initial';
+                        }
+                      </script>
+                </div>
             </div>
 
             <div id="first">
                 <h2>Discussões</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur iste itaque omnis, provident placeat dolore suscipit. Laudantium perferendis impedit veritatis a tempora maxime? Odio voluptatem iure rerum adipisci voluptas!</p>
             </div>
 
             <div id="second">
-                <h2>painarurur</h2>
+                <h2>Discussões</h2>
+                <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
+                <form action="#">
+
+                    <div>
+                        <label for="assunto"><span>Assunto</span></label>
+                        <input id="assunto" name="assunto" type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                    </div>
+
+                    <div>
+                        <label for="conteudo"></label>
+                        <label for="conteudo"><span>Conteúdo</span></label>
+                        <textarea id="conteudo" name="conteudo" rows="8" cols="80"></textarea>
+
+
+                        <div class="enviar">
+                            <p id="boldBtn" onclick="getNegrito()">B</p>
+                            <script>
+                                function getNegrito() {
+                                var conteudo = document.getElementById("conteudo");
+                                conteudo.style.cssText = 'font-weight: bold';
+                                }
+                            </script>
+                            <p id="italicBtn" onclick="getItalico()">I</p>
+                            <script>
+                             function getItalico() {
+                                var conteudo = document.getElementById("conteudo");
+                                conteudo.style.cssText = 'font-style: italic';
+                            }
+                            </script>
+                        </div>
+
+                    </div>
+
+
+                </form>
 
             </div>
 
@@ -142,6 +198,10 @@
 
     <!-- rodapé -->
     <footer>
+        <div>
+            <img src="./img/galoa.png" alt="galoá">
+
+        </div>
 
     </footer>
     <!-- /rodapé -->

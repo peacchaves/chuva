@@ -38,6 +38,7 @@ header>section>h2{
 
 .menusup{
     display: flex;
+    flex-wrap: wrap-reverse;
     margin-top: 13px;
     text-align: end;
     gap: 10px;
@@ -73,7 +74,7 @@ header>section>h2{
 
 /* barra lateral */
 
-.menulateral{
+.container-menulateral{
     max-width: 220px;
     height: 100%;
     position: absolute;
@@ -85,6 +86,7 @@ header>section>h2{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
 }
+
 
 .menutitle{
     background-image: linear-gradient(#FFB354
@@ -165,6 +167,7 @@ main{
 .videosec{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 
@@ -193,14 +196,6 @@ main{
 }
 
 
- @media (max-width: 600px)
-{
-  .vidcont>img
-   {
-    width: 250px;
-   }
-}
-
 /* /vídeo */
 
 
@@ -223,10 +218,15 @@ main{
 }
 
 
+.container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
 .details{
     border: 2px solid #E7E7E7;
     overflow: auto;
-    width: 242px;
+    max-width: 242px;
     height: 418px;
 }
 
@@ -288,14 +288,34 @@ details>p{
     max-width: 1005px;
 }
 
-#principal>h2{
+.discussões>div>h2{
     background-color: #FDF1EB;
     padding: 10px;
 }
 
-#principal>p{
+.discussões>div>p{
     padding: 10px;
+    text-align: center;
 }
+
+.conteudo-principal{
+    text-align: center;
+}
+
+.createtopic{
+    border: none;
+}
+
+.createtopic>img{
+    cursor: pointer;
+}
+
+
+/* /discussões */
+
+
+
+
 
 #first, #second, #third{
     display: none;
@@ -303,4 +323,26 @@ details>p{
 
 
 
-/* /discussões */
+#conteudo{
+    display: block;
+}
+
+.enviar{
+    display: flex;
+    background-color: #EAF1F2;
+}
+
+#second>form>div>label>span{
+    display: block;
+}
+
+#boldBtn{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#italicBtn{
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
