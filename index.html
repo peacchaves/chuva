@@ -86,12 +86,29 @@
                 </div>
 
                 <div class="details">
-                    <div class="container">
-                        <h2>Detalhes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam, omnis sunt nisi delectus excepturi optio quidem, ipsam soluta animi non. Accusamus placeat quo eaque, facere modi ratione doloribus perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ullam error labore blanditiis adipisci repellendus porro alias iusto consectetur molestiae, a facere iure eos illo possimus facilis doloribus magnam quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum voluptate praesentium natus dolor sunt amet ad. Officiis maxime ad, dolorum cum odit inventore in non dolorem! Illo, fugit ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus repellat quaerat repellendus soluta totam nobis maxime consectetur corporis esse optio rem deserunt voluptatibus nesciunt excepturi, officiis perferendis quibusdam molestiae!</p>
-
-                    </div>
+                    <h2>Detalhes</h2>
+                    <p class="parag1">
+                        <span>Tipo de apresentação: <strong>Pôster</strong></span>
+                        <span>Eixo temático: <strong>Alimentação e Saúde (AS)</strong></span>
+                        <span>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></span>
+                    </p>
                     
+                    <p class="parag2">
+                        <span><strong>Autores:</strong></span>
+                        <span>Galileo Galilei¹</span>
+                        <span>Berta Lange de Morretes²</span>
+                        <span>Isaac Newton³</span>
+                        <span>Cesar Lattes¹</span>
+                        <span>Stephen Hawking⁴</span>
+                    </p>
+
+                    <p class="parag3">
+                        <span>¹Universidade Estadual de Campinas</span>
+                        <span>²Universidade de São Paulo</span>
+                        <span>³Instituto Nacional de Pesquisas Espaciais</span>
+                        <span>⁴Universidade Federal do Rio de Janeiro</span>
+
+                    </p>
                 </div>
             </section>
             <!-- /detalhes -->
@@ -110,17 +127,19 @@
         <!-- /resumo -->
 
 
-        <!-- discussões -->
+ 
         <section class="discussões">
+            
+            <!-- discussões inicial -->
             <div id="principal">
                 <h2>Discussões</h2>
                 <div class="conteudo-principal">
                     <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
-                    <img src="./img/icone1.jpg" alt="">
-                    <img src="./img/icone2.jpg" alt="">
-                    <img src="./img/icone3.jpg" alt="">
-                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixei seus questionamentos ou sugestões para o autor!</p>
-                    <button class="createtopic" onclick="criarTopico()"><img src="./img/criartopico.jpg" alt="criar topico"></button>
+                    <img src="./img/icone1.jpg">
+                    <img src="./img/icone2.jpg">
+                    <img src="./img/icone3.jpg">
+                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                    <p class="createtopic" onclick="criarTopico()"><img src="./img/criartopico.jpg" alt="criar topico"></p>
 
                     <script>
                         function criarTopico(){
@@ -133,43 +152,150 @@
                         }
                       </script>
                 </div>
-            </div>
 
+                <div class="assuntoperg">
+                    <h2>Assunto da pergunta aparece aqui</h2>
+                    <h3>Carlos Henrique Santos</h3>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                    <div class="btnAssuntoperg">
+                        <img class="ponto3" src="./img/ponto3.png">
+                        <img class="favoritar" src="img/favoritar.png" alt="favoritar">
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+
+                <div class="assuntoperg">
+                    <h2>Assunto da pergunta aparece aqui</h2>
+                    <h3>Carlos Henrique Santos</h3>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                    <div class="btnAssuntoperg">
+                        <img class="ponto3" src="./img/ponto3.png">
+                        <img class="favoritar" src="img/favoritar.png" alt="favoritar">
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /discussões inicial -->
+
+
+            <!-- sucesso + blur -->
             <div id="first">
                 <h2>Discussões</h2>
-            </div>
+                <h3>Seu tópico foi enviado com sucesso! :D</h3>
+                <p class="parablur">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                <p class="descubra">Descubra outros trabalhos!</p>
 
+                <div class="createnewtopic" onclick="cNewTopic()">
+                    <p>criar novo tópico</p>
+                    <script>
+                        function cNewTopic(){
+                          var first = document.getElementById("first");
+                          first.style.cssText = 'display: none';
+                        
+                        
+                          var second = document.getElementById("second");
+                          second.style.cssText = 'display: initial';
+                        }
+                      </script>
+                </div>
+
+
+                <div class="blur">
+                    <img src="img/vv.png">
+                    <p>Aguardando feedback dos autores</p>
+                    <a onclick="cNewTopic()">Editar tópico</a> 
+                </div>
+
+                <div class="assuntoperg special">
+                    <h2>Assunto da pergunta aparece aqui</h2>
+                    <h3>Carlos Henrique Santos</h3>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                    <div class="btnAssuntoperg">
+                        <img class="ponto3" src="./img/ponto3.png">
+                        <img class="favoritar" src="img/favoritar.png" alt="favoritar">
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+
+                <div class="assuntoperg special">
+                    <h2>Assunto da pergunta aparece aqui</h2>
+                    <h3>Carlos Henrique Santos</h3>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                    <div class="btnAssuntoperg">
+                        <img class="ponto3" src="./img/ponto3.png">
+                        <img class="favoritar" src="img/favoritar.png" alt="favoritar">
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /sucesso + blur -->
+
+
+            <!-- formulário -->
             <div id="second">
                 <h2>Discussões</h2>
-                <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
+                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                 <form action="#">
 
                     <div>
-                        <label for="assunto"><span>Assunto</span></label>
-                        <input id="assunto" name="assunto" type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                        <div class="content">
+                            <label for="assunto">Assunto</label>
+                        </div>
+
+                        <input id="assunto" name="assunto" type="text" placeholder="      Defina um tópico sucinto para notificar os autores...">
                     </div>
 
                     <div>
-                        <label for="conteudo"></label>
-                        <label for="conteudo"><span>Conteúdo</span></label>
+                        <div class="content">
+                            <label for="conteudo">Conteúdo</label>
+                        </div>
+
                         <textarea id="conteudo" name="conteudo" rows="8" cols="80"></textarea>
+                        
 
 
-                        <div class="enviar">
-                            <p id="boldBtn" onclick="getNegrito()">B</p>
-                            <script>
-                                function getNegrito() {
-                                var conteudo = document.getElementById("conteudo");
-                                conteudo.style.cssText = 'font-weight: bold';
+                        <div id="second-buttons">
+                            <div class="boldanditalic">
+                                <p id="boldBtn" onclick="getNegrito()">B</p>
+                                <script>
+                                    function getNegrito() {
+                                    var conteudo = document.getElementById("conteudo");
+                                    conteudo.style.cssText = 'font-weight: bold';
+                                    }
+                                </script>
+                                <p id="italicBtn" onclick="getItalico()">I</p>
+                                <script>
+                                 function getItalico() {
+                                    var conteudo = document.getElementById("conteudo");
+                                    conteudo.style.cssText = 'font-style: italic';
                                 }
-                            </script>
-                            <p id="italicBtn" onclick="getItalico()">I</p>
-                            <script>
-                             function getItalico() {
-                                var conteudo = document.getElementById("conteudo");
-                                conteudo.style.cssText = 'font-style: italic';
-                            }
-                            </script>
+                                </script>
+                            </div>
+                            <div class="enviar" onclick="enviar()">
+                                <p>Enviar</p>
+                                <script>
+                                    function enviar(){
+                                      var second = document.getElementById("second");
+                                      second.style.cssText = 'display: none';
+                                    
+                                    
+                                      var first = document.getElementById("first");
+                                      first.style.cssText = 'display: initial';
+                                    }
+                                  </script>
+                            </div>
                         </div>
 
                     </div>
@@ -177,20 +303,39 @@
 
                 </form>
 
-            </div>
+                <div class="assuntoperg">
+                    <h2>Assunto da pergunta aparece aqui</h2>
+                    <h3>Carlos Henrique Santos</h3>
 
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                    <div class="btnAssuntoperg">
+                        <img class="ponto3" src="./img/ponto3.png">
+                        <img class="favoritar" src="img/favoritar.png" alt="favoritar">
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+
+                <div class="assuntoperg">
+                    <h2>Assunto da pergunta aparece aqui</h2>
+                    <h3>Carlos Henrique Santos</h3>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+
+                    <div class="btnAssuntoperg">
+                        <img class="ponto3" src="./img/ponto3.png">
+                        <img class="favoritar" src="img/favoritar.png" alt="favoritar">
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /formulário -->
             
-            <div id="third">
-                <h2>Jojocoroco</h2>
 
-            </div>
-
-
-            <ul>
-                <li><div class="divlista"></div></li>
-                <li><div class="divlista"></div></li>
-                <li><div class="divlista"></div></li>
-            </ul>
+            <!-- espaço para finalizar o projeto ao obter conhecimento suficiente com DOM -->
 
         </section>
         <!-- /discussões -->
@@ -198,11 +343,7 @@
 
     <!-- rodapé -->
     <footer>
-        <div>
-            <img src="./img/galoa.png" alt="galoá">
-
-        </div>
-
+        <img src="./img/footer.png" alt="rodapé">
     </footer>
     <!-- /rodapé -->
 </body>

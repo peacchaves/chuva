@@ -39,11 +39,12 @@ header>section>h2{
 .menusup{
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-top: 13px;
     text-align: end;
     gap: 10px;
     font-family: 'Quicksand', sans-serif;
     color: #333333;
+    align-items: baseline;
+    align-items: center;
 
 }
 
@@ -67,16 +68,15 @@ header>section>h2{
     border-radius: 50%;
 }
 
-
-
 /* /menu superior */
+
 
 
 /* barra lateral */
 
 .container-menulateral{
     max-width: 220px;
-    height: 100%;
+    height: 1700px;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -230,6 +230,48 @@ main{
     height: 418px;
 }
 
+.details>h2{
+    background-color: #FDF1EB;
+    color: #4E4E4E;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.details>p{
+    font-family: Quicksand;
+    color: #4D4D4D;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.parag1{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.parag1>span{
+    display: block;
+}
+
+.parag2{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.parag2>span{
+    display: block;
+}
+
+.parag3{
+    font-size: 14px;
+}
+
+.parag3>span{
+    display: block;
+    color: #b1b1b1;
+}
+
 .details::-webkit-scrollbar-track {
     background-color: #F4F4F4;
 }
@@ -264,14 +306,21 @@ details>summary>span>h2{
     background-color: #FDF1EB;
     padding: 10px;
     cursor: pointer;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #4E4E4E;
 }
 
 details>summary>p{
     padding: 10px;
+    font-family: Quicksand;
+    color: #4D4D4D;
 }
 
 details>p{
     padding: 10px;
+    font-family: Quicksand;
+    color: #4D4D4D;
 }
 
 /* /resumo */
@@ -288,9 +337,16 @@ details>p{
     max-width: 1005px;
 }
 
+#principal{
+    margin-bottom: 20px;
+}
+
 .discussões>div>h2{
     background-color: #FDF1EB;
     padding: 10px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #4E4E4E;
 }
 
 .discussões>div>p{
@@ -302,13 +358,102 @@ details>p{
     text-align: center;
 }
 
+.conteudo-principal>h3{
+    font-family: Roboto;
+    font-weight: 700;
+    color: #ED7839;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal>p{
+    color: #595959;
+    font-family: Quicksand;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 10px;
+}
+
 .createtopic{
     border: none;
+    margin-bottom: 20px;
 }
 
 .createtopic>img{
     cursor: pointer;
 }
+
+
+.assuntoperg{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    width: 95%;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    margin-bottom: 20px;
+}
+
+
+.assuntoperg>h2{
+    font-family: Quicksand;
+    color: #ED7839;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.assuntoperg>h3{
+    color: #5C5C5C;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.assuntoperg>p{
+    color: #4D4D4D;
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.btnAssuntoperg{
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btnAssuntoperg>p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #757575;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.btnAssuntoperg>img{
+    cursor: pointer;
+}
+
+.ponto3{
+    width: 4px;
+    height: 18px;
+}
+
+
 
 
 /* /discussões */
@@ -317,24 +462,91 @@ details>p{
 
 
 
-#first, #second, #third{
-    display: none;
+/* discussões FORMULARIO */
+
+
+#second{
+    text-align: center;
+}
+
+#second>h2{
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #4E4E4E;
+}
+
+#second>p{
+    font-family: Quicksand;
+    color: #5C5C5C;
+    font-weight: 400;
+    font-size: 14px;
+
 }
 
 
+#assunto{
+    width: 95%;
+    outline: none;
+    border: 1px solid #CCCCCC;
+    height: 39px;
+}
 
 #conteudo{
-    display: block;
+    resize: none;
+    outline: none;
+    height: 82px;
+    width: 95%;
+    border: 1px solid #CCCCCC;
+}
+
+.boldanditalic{
+    text-align: center;
+    display: flex;
+    background-color: #EAF1F2;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+.boldanditalic>p{
+    margin-left: 20px;
+}
+
+.content{
+    text-align: initial;
+    margin-left: 25px;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    font-family: Roboto;
+    color: #ED7839;
+    font-weight: bold;
 }
 
 .enviar{
-    display: flex;
-    background-color: #EAF1F2;
+    background-image: linear-gradient(#FFB354
+    , #EE7A3A);
+    color: white;
+    width: 15%;
+    cursor: pointer;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px;
+    height: 40px;
+    font-family: Quicksand;
 }
 
-#second>form>div>label>span{
-    display: block;
+form{
+    margin-bottom: 50px;
 }
+
+
+#second-buttons{
+    display: flex;
+}
+
 
 #boldBtn{
     font-weight: bold;
@@ -345,4 +557,113 @@ details>p{
     font-weight: bold;
     font-style: italic;
     cursor: pointer;
+}
+
+
+/* /discussões FORMULARIO */
+
+
+
+#first{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+}
+
+.special{
+    text-align: left;
+}
+
+#first>h2{
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #4E4E4E;
+}
+
+#first>h3{
+    color: #ED7839;
+    font-family: Roboto;
+    margin-top: 20px;
+}
+
+.parablur{
+    color: #595959;
+    font-family: Quicksand;
+}
+
+.descubra{
+    margin-top: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: Quicksand;
+    cursor: pointer;
+    color: #F48F44;
+}
+
+.createnewtopic{
+    background-image: linear-gradient(#FFB354
+    , #EE7A3A);
+    color: white;
+    width: 200px;
+    padding: 5px;
+    margin-left: 25rem;
+    border-radius: 4px;
+    font-family: Quicksand;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+.blur{
+    background-image: url('../img/blur.jpg');
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 95%;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.blur>img{
+    margin-top: 50px;
+
+}
+
+.blur>p{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Quicksand;
+    margin-top: 5px;
+    color: #707070;
+
+}
+
+.blur>a{
+    color: #ED7839;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: Quicksand;
+}
+
+/* discussões FIRST */
+
+
+
+/* footer */
+footer{
+    margin-left: 16rem;
+    margin-top: 50px;
+    width: 60%;
+}
+/* /footer */
+
+
+
+/* none do discussões */
+ #first, #second, #third{
+    display: none;
 }

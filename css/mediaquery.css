@@ -1,6 +1,4 @@
-
-
-@media (width: 570px){
+@media (max-width: 570px){
     
 .container-menulateral{
     position: relative;
@@ -8,6 +6,15 @@
 
 main{
     margin-left: 20px;
+}
+
+footer{
+    margin-left: 20px;
+    width: 30%;
+}
+
+.vidcont{
+    width: 230px;
 }
 
 
@@ -22,41 +29,17 @@ body{
     flex-wrap: wrap;
 }
 
-
+details{
+    width: 220px;
 }
 
+#first, #second, #third, #principal{
+    width: 200px;
+    text-align: left;
+}
 
+.container-menulateral{
+    height: 100%;
+}
 
-/* blablablabla */
-
-
-@media (max-width: 320px){
-    
-    .container-menulateral{
-        position: relative;
-    }
-    
-    main{
-        margin-left: 20px;
-    }
-
-    .vidcont>img{
-        max-width: 150px;
-        width: 100%;
-        cursor: pointer;
-    }
-    
-    
-    header{
-        margin-left: 0px;
-        padding-left: 20px;
-    }
-    
-    
-    body{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    
-    }
+}
