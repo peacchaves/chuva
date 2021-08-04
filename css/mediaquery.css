@@ -34,12 +34,13 @@ details{
 }
 
 #first, #second, #third, #principal{
-    width: 200px;
+    width: 220px;
     text-align: left;
 }
 
 .container-menulateral{
     height: 100%;
+    width: 220px;
 }
 
 }
