@@ -9,31 +9,38 @@
 
 /* menu superior */
 header{
-    margin-left: 220px;
+    margin-left: 16.11%;
     padding: 5.5px 0px 5.5px 30px;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     background-color: #FDF1EB;
     padding-right: 4rem;
+    width: 83.89%;
 }
 
-header>section{
+.menutoptitles{
     color: #725C5C;
     font-weight: 400;
+    line-height: 16px;
 }
 
-header>section>h1{
+.menutoptitles>h1{
     font-size: 14px;
+    font-family: Roboto;
+    Line height: 16,41px;
 }
 
-header>section>h3{
-    font-size: 14px;
-}
-
-header>section>h2{
+.menutoptitles>h2{
     font-size: 22px;
     line-height: 25.78px;
+    font-family: Roboto;
+}
+
+.menutoptitles>h3{
+    font-size: 14px;
+    font-family: Roboto;
+    Line height: 16,41px;
 }
 
 .menusup{
@@ -41,7 +48,7 @@ header>section>h2{
     flex-wrap: wrap-reverse;
     text-align: end;
     gap: 10px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand;
     color: #333333;
     align-items: baseline;
     align-items: center;
@@ -52,20 +59,48 @@ header>section>h2{
     font-size: 12px;
 }
 
+.menusup>a>span{
+    font-size: 12px;
+}
+
 .menusup>p>span{
     display: block;
     font-size: 14px;
 }
 
 .dropbox{
-    max-width: 97px;
-    max-height: 34px;
+    width: 97px;
+    height: 34px;
     cursor: pointer;
 }
 
 .imgperfil{
-    max-height: 30px;
     border-radius: 50%;
+}
+
+.notification{
+    position: relative;
+    display: inline-block;
+
+}
+
+.badge{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #F85959;
+    border-radius: 10px;
+    color: white;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    padding: 1px 2.5px;
 }
 
 /* /menu superior */
@@ -75,8 +110,8 @@ header>section>h2{
 /* barra lateral */
 
 .container-menulateral{
-    max-width: 220px;
-    height: 1700px;
+    width: 16.11%;
+    height: 270%;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -91,13 +126,14 @@ header>section>h2{
 .menutitle{
     background-image: linear-gradient(#FFB354
     , #EE7A3A);
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    text-align: center;
     height: 68px;
-    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menutitle>a{
@@ -106,15 +142,20 @@ header>section>h2{
 
 .logo{
     margin-top: 1rem;
-    max-width: 220px;
+    width: 100%;
+}
+
+.menulat-cont{
     width: 100%;
 }
 
 .menulist{
     margin-top: 10px;
     width: 100%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand;
     font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
 }
 
 .menulist>li{
@@ -127,7 +168,7 @@ header>section>h2{
 }
 
 .contato{
-    font-style: normal;
+    font-style: Quicksand;
     font-weight: 500;
     font-size: 15px;
     line-height: 19px;
@@ -155,7 +196,8 @@ header>section>h2{
 
 
 main{
-    margin-left: 16rem;
+    width: 83.7%;
+    margin-left: 16.3%;
     margin-right: 3rem;
 }
 
@@ -164,7 +206,7 @@ main{
 
 /* vídeo */
 
-.videosec{
+.videoDetails{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
@@ -176,7 +218,7 @@ main{
     flex-direction: column;
     padding: 20px;
     gap: 20px;
-    width: 783px;
+    width: 70%;
 }
 
 .vidcont>h2{
@@ -190,7 +232,6 @@ main{
 }
 
 .vidcont>img{
-    max-width: 783px;
     width: 100%;
     cursor: pointer;
 }
@@ -204,6 +245,7 @@ main{
 
 .rightcolumn{
     margin-top: 20px;
+    width: 25%;
 }
 
 
@@ -215,6 +257,10 @@ main{
 .buttons>a>p{
     text-transform: uppercase;
     color: #ED7839;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 
@@ -226,7 +272,7 @@ main{
 .details{
     border: 2px solid #E7E7E7;
     overflow: auto;
-    max-width: 242px;
+    width: 100%;
     height: 418px;
 }
 
@@ -308,12 +354,15 @@ details>summary>span>h2{
     cursor: pointer;
     font-family: Roboto;
     font-weight: 500;
+    font-size: 20px;
     color: #4E4E4E;
 }
 
 details>summary>p{
     padding: 10px;
     font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
     color: #4D4D4D;
 }
 
@@ -384,6 +433,16 @@ details>p{
 .createtopic>img{
     cursor: pointer;
 }
+
+.agaR{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #E7E7E7;
+    border-top: none;
+}
+
 
 
 .assuntoperg{
@@ -655,7 +714,7 @@ form{
 
 /* footer */
 footer{
-    margin-left: 16rem;
+    margin-left: 16.3%;
     margin-top: 50px;
     width: 60%;
 }
