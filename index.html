@@ -90,28 +90,28 @@
 
                 <div class="details">
                     <h2>Detalhes</h2>
-                    <p class="parag1">
-                        <span>Tipo de apresentação: <strong>Pôster</strong></span>
-                        <span>Eixo temático: <strong>Alimentação e Saúde (AS)</strong></span>
-                        <span>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></span>
-                    </p>
-                    
-                    <p class="parag2">
-                        <span><strong>Autores:</strong></span>
-                        <span>Galileo Galilei¹</span>
-                        <span>Berta Lange de Morretes²</span>
-                        <span>Isaac Newton³</span>
-                        <span>Cesar Lattes¹</span>
-                        <span>Stephen Hawking⁴</span>
-                    </p>
-
-                    <p class="parag3">
-                        <span>¹Universidade Estadual de Campinas</span>
-                        <span>²Universidade de São Paulo</span>
-                        <span>³Instituto Nacional de Pesquisas Espaciais</span>
-                        <span>⁴Universidade Federal do Rio de Janeiro</span>
-
-                    </p>
+                    <div class="contdetv">
+                        <p class="parag1">
+                            <span>Tipo de apresentação: <strong>Pôster</strong></span>
+                            <span>Eixo temático: <strong>Alimentação e Saúde (AS)</strong></span>
+                            <span>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></span>
+                        </p>
+                        
+                        <p class="parag2">
+                            <span><strong>Autores:</strong></span>
+                            <span>Galileo Galilei¹</span>
+                            <span>Berta Lange de Morretes²</span>
+                            <span>Isaac Newton³</span>
+                            <span>Cesar Lattes¹</span>
+                            <span>Stephen Hawking⁴</span>
+                        </p>
+                        <p class="parag3">
+                            <span>¹Universidade Estadual de Campinas</span>
+                            <span>²Universidade de São Paulo</span>
+                            <span>³Instituto Nacional de Pesquisas Espaciais</span>
+                            <span>⁴Universidade Federal do Rio de Janeiro</span>
+                        </p>
+                    </div>
                 </div>
             </section>
             <!-- /detalhes -->
@@ -142,8 +142,8 @@
                     <img src="./img/icone2.jpg">
                     <img src="./img/icone3.jpg">
                     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                    <hr class="agaR">
-                    <p class="createtopic" onclick="criarTopico()"><img src="./img/criartopico.png" alt="criar topico"></p>
+
+                    <div class="createtopic" onclick="criarTopico()"><img class="ctpcBtn" src="./img/criartopico.png" alt="criar topico"></div>
 
                     <script>
                         function criarTopico(){
@@ -345,8 +345,20 @@
         <!-- /discussões -->
     </main>
 
+    <hr class="maintofoot">
+
     <!-- rodapé -->
     <footer>
+        <div class="containerf">
+            <div class="logoebtn">
+                <img src="img/galoa.png" alt="logo" width="100%">
+                <p class="sbmais">Saiba mais!</p>
+            </div>
+            <section class="contfot">
+                <p><strong>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</strong> gerado em eventos é a razão de ser da plataforma Galoá Proceedings.</p>
+                <p>Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
+            </section>
+        </div>
        
     </footer>
     <!-- /rodapé -->

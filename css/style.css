@@ -15,7 +15,7 @@ header{
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     background-color: #FDF1EB;
-    padding-right: 4rem;
+    padding-right: 1.5%;
     width: 83.89%;
 }
 
@@ -111,7 +111,7 @@ header{
 
 .container-menulateral{
     width: 16.11%;
-    height: 270%;
+    height: 280%;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -210,6 +210,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 
@@ -218,7 +219,6 @@ main{
     flex-direction: column;
     padding: 20px;
     gap: 20px;
-    width: 70%;
 }
 
 .vidcont>h2{
@@ -234,6 +234,7 @@ main{
 .vidcont>img{
     width: 100%;
     cursor: pointer;
+    height: 100%;
 }
 
 
@@ -251,7 +252,7 @@ main{
 
 .buttons{
     text-align: end;
-    margin-bottom: 16px;
+    margin-bottom: 11px;
 }
 
 .buttons>a>p{
@@ -263,17 +264,17 @@ main{
     line-height: 25px;
 }
 
-
-.container{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
 .details{
     border: 2px solid #E7E7E7;
     overflow: auto;
     width: 100%;
-    height: 418px;
+    height: 439px;
+}
+
+.contdetv{
+    margin: 15px;
+    text-align: left;
+    letter-spacing: 2%;
 }
 
 .details>h2{
@@ -281,14 +282,17 @@ main{
     color: #4E4E4E;
     font-family: Roboto;
     font-weight: 500;
+    font-size: 20px;
 }
 
-.details>p{
+.contdetv>p{
     font-family: Quicksand;
     color: #4D4D4D;
     font-weight: 400;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+
+strong{
+    font-weight: bold;
 }
 
 .parag1{
@@ -302,7 +306,7 @@ main{
 
 .parag2{
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .parag2>span{
@@ -344,8 +348,9 @@ main{
 details{
     border: 2px solid #E7E7E7;
     text-align: justify;
-    margin-left: 20px;
-    max-width: 1005px;
+    width: 96.5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 details>summary>span>h2{
@@ -359,7 +364,7 @@ details>summary>span>h2{
 }
 
 details>summary>p{
-    padding: 10px;
+    margin: 15px;
     font-family: Quicksand;
     font-weight: 400;
     font-size: 14px;
@@ -367,8 +372,10 @@ details>summary>p{
 }
 
 details>p{
-    padding: 10px;
+    margin: 15px;
     font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
     color: #4D4D4D;
 }
 
@@ -382,8 +389,9 @@ details>p{
     margin-top: 30px;
     border: 2px solid #E7E7E7;
     text-align: justify;
-    margin-left: 20px;
-    max-width: 1005px;
+    width: 96.5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #principal{
@@ -393,6 +401,7 @@ details>p{
 .discussões>div>h2{
     background-color: #FDF1EB;
     padding: 10px;
+    font-size: 20px;
     font-family: Roboto;
     font-weight: 500;
     color: #4E4E4E;
@@ -425,24 +434,17 @@ details>p{
     margin-bottom: 10px;
 }
 
+
 .createtopic{
-    border: none;
-    margin-bottom: 20px;
-}
-
-.createtopic>img{
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
-.agaR{
-    width: 80%;
+
+.ctpcBtn{
+    margin: 0 auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: #E7E7E7;
-    border-top: none;
 }
-
 
 
 .assuntoperg{
@@ -551,6 +553,13 @@ details>p{
     height: 39px;
 }
 
+#assunto::-webkit-input-placeholder{
+    font-size: 14px;
+    font-family: Quicksand;
+    color: #4D4D4D;
+    font-weight: 400;
+}
+
 #conteudo{
     resize: none;
     outline: none;
@@ -568,6 +577,7 @@ details>p{
     margin-left: 25px;
     border: 1px solid #CCCCCC;
     padding: 10px;
+    height: 40px;
 }
 
 .boldanditalic>p{
@@ -604,6 +614,7 @@ form{
 
 #second-buttons{
     display: flex;
+    width: 100%;
 }
 
 
@@ -668,7 +679,8 @@ form{
     color: white;
     width: 200px;
     padding: 5px;
-    margin-left: 25rem;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     font-family: Quicksand;
     font-weight: 500;
@@ -712,11 +724,57 @@ form{
 
 
 
+.maintofoot{
+    border-top: none;
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 17%;
+    background-color: #ECECEC;
+}
+
+
+
 /* footer */
 footer{
-    margin-left: 16.3%;
+    margin-left: 16.11%;
     margin-top: 50px;
-    width: 60%;
+    margin-bottom: 30px;
+    width: 83.89%;
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.containerf{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 30px;
+    text-align: left;
+    align-items: baseline;
+    align-items: center;
+}
+
+.logoebtn{
+    width: 25%;
+}
+
+.sbmais{
+    background-color: rgb(110, 73, 136);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.contfot{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 /* /footer */
 
