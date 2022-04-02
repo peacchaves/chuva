@@ -1,4 +1,4 @@
 # chuva
 
-teste de vaga de estágio <br>
-objetivo: desenvolver uma página com auxílio do figma feito pela empresa
+projeto html e css <br>
+objetivo: ganhar prática ao criar uma web page
